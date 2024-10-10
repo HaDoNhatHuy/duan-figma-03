@@ -272,3 +272,48 @@ a {
   font-weight: 400;
   line-height: 1.75; /* 175% */
 }
+/* ====================================about============================= */
+.about {
+  /* padding: 170px 0; */
+  /* hoặc để sau này khi dự án có thay đổi thiết kế, 
+  ta sử dụng padding: 85px 0; và margin-top: 85px; cho nếu có màu nền thì nó không dính vào sát text */
+  margin-top: 85px;
+  padding: 85px 0 206px;
+  /* 206px = khoảng padding 85px + 121px từ khoảng cách cái ảnh
+   vì tính toán để cách khi lôi bức ảnh ra khỏi luồng nó bị trồi ra ngoài cái nền */
+}
+.about-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about__media {
+  width: 49%;
+}
+.about-content {
+  width: 40%;
+}
+.about__img {
+  position: relative;
+}
+.about__img--large {
+  display: flex;
+  /* xài display: flex vì bức ảnh có 1 phần thò ra dư vì thẻ img là thẻ inline */
+  width: 512px;
+  height: 370px;
+  border-radius: 6px;
+  box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.07);
+  object-fit: cover;
+}
+.about__img-small {
+  width: 332px;
+  height: 370px;
+  object-fit: cover;
+  border-radius: 6px;
+  position: absolute;
+  top: 121px;
+  left: 238px;
+}
+.about-content__btn {
+  margin-top: 38px;
+}
